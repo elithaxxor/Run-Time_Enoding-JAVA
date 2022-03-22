@@ -53,7 +53,7 @@ public class run_time_encoding{
             char val = string.charAt(i);
             char running_val = string.charAt(i-1);
 
-            if ((val == running_val && running_len == 9)){
+            if ((val != running_val) || (running_len == 9)){
                 running_string.append(Integer.toString(running_len));
                 running_string.append(running_val);
                 running_len = 0;
