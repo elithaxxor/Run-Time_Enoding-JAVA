@@ -68,7 +68,7 @@ public class run_time_encoding{
         double encoded_len = encoding_results.length();
         double decoded_len = decoding_results.length();
 
-        final double data_saved = calc_start / (encoded_len / toEncode_len) * 100 ;
+        final double data_saved = calc_start / (encoded_len * toEncode_len) * 100 ;
         System.out.println("[TEST DATA] --> "+ toEncode);
         System.out.println("[+] Encoding Results--> " + encoding_results);
         System.out.println("[+] Decoding Results--> " + decoding_results);
